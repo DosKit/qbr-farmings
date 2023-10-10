@@ -30,7 +30,7 @@ end)
 ---------------------------------------------------------------------
 
 for k, v in pairs(Config.FarmingCrops) do
-    exports['qbr-inventory']:CreateUseableItem('seed_'..v, function(source, item)
+    exports['qbr-core']:CreateUseableItem('seed_'..v, function(source, item)
         local src = source
         local data = {item.name, item.slot, k}
         TriggerClientEvent('qbr-farming:client:PlaceSeed', src, data)
