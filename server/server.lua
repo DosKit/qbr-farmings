@@ -51,7 +51,7 @@ CreateThread(function()
                     for k=1, #PlantObjects[i] do
                         local current = PlantObjects[i]?[k]
                         if current and current.tick < 5 then
-                            current.tick += 1
+                            current.tick = current.tick + 1
                             local coords = current.coords
                             current.coords = vector3(coords.x, coords.y, coords.z + 0.25)
                             change = true
