@@ -73,7 +73,7 @@ local function InsideZoneThread(zone)
                 end
             elseif next(CurrentPlants) then
                 for i=1, #CurrentPlants do
-                    DeleteEntity(CurrentPlants[k])
+                    DeleteEntity(CurrentPlants[i])
                 end
                 CurrentPlants = {}
             end
